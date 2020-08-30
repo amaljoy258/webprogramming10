@@ -26,36 +26,50 @@
       }
       .img1 {
         width: 10vw;
+        cursor: pointer;
       }
       .img2 {
         width: 60vw;
+        cursor: pointer;
       }
       .img3 {
         width: 20vw;
+        cursor: pointer;
       }
     </style>
+    <script>
+      function mobile() {
+        location.href = "https://en.wikipedia.org/wiki/Mobile_phone";
+      }
+      function laptop() {
+        location.href = "https://en.wikipedia.org/wiki/Laptop";
+      }
+      function camera() {
+        location.href = "https://en.wikipedia.org/wiki/Camera";
+      }
+    </script>
   </head>
   <body>
     <section class="bground">
       <div>
-        <a href="https://en.wikipedia.org/wiki/Mobile_phone"
-          ><img
-            class="img1"
-            src="https://github.com/amaljoy258/webprogramming10/blob/master/img/mob.png?raw=true"
-            alt="Mobile"
-        /></a>
-        <a href="https://en.wikipedia.org/wiki/Laptop"
-          ><img
-            class="img2"
-            src="https://github.com/amaljoy258/webprogramming10/blob/master/img/lap.png?raw=true"
-            alt="Laptop"
-        /></a>
-        <a href="https://en.wikipedia.org/wiki/Camera"
-          ><img
-            class="img3"
-            src="https://github.com/amaljoy258/webprogramming10/blob/master/img/cam.png?raw=true"
-            alt="Camera"
-        /></a>
+        <img
+          onclick="mobile()"
+          class="img1"
+          src="https://github.com/amaljoy258/webprogramming10/blob/master/img/mob.png?raw=true"
+          alt="Mobile"
+        />
+        <img
+          onclick="laptop()"
+          class="img2"
+          src="https://github.com/amaljoy258/webprogramming10/blob/master/img/lap.png?raw=true"
+          alt="Laptop"
+        />
+        <img
+          onclick="camera()"
+          class="img3"
+          src="https://github.com/amaljoy258/webprogramming10/blob/master/img/cam.png?raw=true"
+          alt="Camera"
+        />
       </div>
     </section>
   </body>
